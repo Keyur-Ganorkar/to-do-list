@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Jq TO-DO </title>
+
+        <link href="css_ui/normalize.css" rel="stylesheet">
+        <link href="css_ui/styles.css" rel="stylesheet">
+        
+        <!-- jQuery UI CSS -->
+        <link href="js_ui/jquery-ui-1.11.4/jquery-ui.css" rel="stylesheet">
+        <link href="js_ui/jquery-ui-1.11.4/jquery-ui.theme.css" rel="stylesheet">
+        <link href="js_ui/jquery-ui-1.11.4/jquery-ui.structure.css" rel="stylesheet">
+
+    </head>
+    <body>
+        
+        <div class="container" id="todoListWrapper">
+            <h1>TO-DO LIST</h1>
+            <br>
+            <div id="todoList">
+                <ul>
+                    <li class="listTitle">Monday</li>
+                    <li class="addItem"><input type="text" placeholder="Add New item.."></li>
+                </ul>
+                <ul>
+                    <li class="listTitle">Tuesday</li>
+                    <li class="addItem"><input type="text" placeholder="Add New item.."></li>
+                </ul>
+                <ul>
+                    <li class="listTitle">Wednesday</li>
+                    <li class="addItem"><input type="text" placeholder="Add New item.."></li>
+                </ul>
+                <ul>
+                    <li class="listTitle">Thursday</li>
+                    <li class="addItem"><input type="text" placeholder="Add New item.."></li>
+                </ul>
+                <ul>
+                    <li class="listTitle">Friday</li>
+                    <li class="addItem"><input type="text" placeholder="Add New item.."></li>
+                </ul>
+                <ul>
+                    <li class="listTitle">Saturday</li>
+                    <li class="addItem"><input type="text" placeholder="Add New item.."></li>
+                </ul>
+               
+            </div><!--todolist -->
+        </div>
+        <div id="trash"> 
+            <svg height="120px" width="120px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.00 512.00" xml:space="preserve" fill="#000000" stroke="#000000" stroke-width="0.00512" transform="rotate(0)matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="0" y="0" width="512.00" height="512.00" rx="256" fill="#7ed0ec" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle style="fill:#FF8A66;" cx="256" cy="256" r="256"></circle> <path style="fill:#FF5419;" d="M511.86,247.903L380.983,117.026L165.038,381.149L293.19,509.3C416.947,491.287,512,384.752,512,256 C512,253.29,511.943,250.592,511.86,247.903z"></path> <path style="fill:#366695;" d="M195.662,394.974h120.677c22.507,0,41.353-18.965,43.594-43.868l21.051-234.081H131.017 l21.052,234.081C154.309,376.01,173.154,394.974,195.662,394.974z"></path> <path style="fill:#273B7A;" d="M255.426,117.026v277.947h60.912c22.507,0,41.353-18.965,43.594-43.868l21.051-234.079H255.426z"></path> <polygon style="fill:#263A7A;" points="380.983,117.026 131.017,117.026 136.413,177.03 375.587,177.03 "></polygon> <polygon style="fill:#41407c;" points="380.983,117.026 255.426,117.026 255.426,177.03 375.587,177.03 "></polygon> </g></svg>
+            <p>Drag Here to Delete</p>
+        </div>
+        
+        
+
+         <!--load the CDN first-->
+         <script src="//code.jquery.com/jquery-3.6.3.min.js"></script>
+
+         <!--if CDN fails to load ,server upo the local version-->
+         <script>window.jQuery||document.write('<script src="js_ui/jsquery.js"><\/script>');</script>
+        <!--UI -->
+        <script src="js_ui/jquery-ui-1.11.4/jquery-ui.js"></script>
+        
+        <script src="js_ui/script.js"></script>
+    </body>
+</html>

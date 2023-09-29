@@ -1,0 +1,235 @@
+/* styles.css */
+
+body {
+    background: #333 url('/img/textures.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    width: 1000px;
+    
+    height: 600px;
+    margin: 120px auto 0;
+    background: lightgrey;
+    
+    border-radius: 10px;
+    padding: 20px;
+    
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+    box-shadow: #333 10px 10px 15px  ;
+
+    background: url('/img/paper_2.jpg') no-repeat center;
+    
+    background-size: cover;
+   /* overflow:scroll;*/
+}
+
+.container:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.fixedContainer {
+    /* fixed height container
+       with overflow for scrollbar
+    */
+    height: 400px;
+    overflow: auto;
+}
+    
+.box {
+    height: 120px;
+    width: 120px;
+    background: #000;
+    color: white;
+    line-height: 120px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#box1 { background: #38c; }
+#box2 { background: #9d9; }
+#box3 { background: #c27; }
+
+#droppable {
+    background: #222;
+    border: solid 2px #000;
+    height: 300px;
+    width: 400px;
+    line-height: 300px;
+    text-align: center;
+    color: white;
+    margin: 40px auto;
+}
+
+ul {
+    width: 48%;
+    float: left;
+    margin: 0;
+    padding: 0 1%;
+    list-style: none;
+}
+
+ul li {
+    background: #eee;
+    padding: 10px;
+    margin: 2px 0;
+    border: solid 1px #ccc;
+}
+
+ul li:hover {
+    background: #ddd;
+    border-color: #aaa;
+    cursor: pointer;
+}
+
+ul li:active {
+    transform: rotate(1.5deg); 
+ 
+    background: #ccc;
+    border-color: #999;
+    box-shadow: 0 10px -4px #111;
+}
+
+.placeholderBox {
+    background: rgb(54, 206, 233);
+    height: 20px;
+    border: dashed 2px #777;
+}
+
+/* ---------
+   TODO LIST
+   --------- */
+
+h1{
+    margin-top: 1px;
+    text-align: center;
+    text-decoration: underline 2px #333;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#todoListWrapper {
+    width: 1360px;
+    text-align: center;
+}
+
+#todoList:after {
+    clear: both;
+    display: table;
+    content: "";
+    
+}
+
+#todoList ul {
+    width: 16.66%;
+    
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
+    
+}
+
+#todoList li {
+    background: none;
+    padding: 7px 5px;
+    border: none;
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    
+    
+    border-radius: 10px;
+}
+
+#todoList li:hover {
+    background: #b8b3b3;
+}
+
+#todoList li.listTitle {
+    background: #444;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-right: solid 1px white;
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#todoList li.listTitle:hover, #todoList li.listTitle:active {
+    cursor: default;
+    transform: none;
+    
+}
+
+#todoList .emptySpace {
+    background: rgb(248, 214, 110);
+    border: dashed 1px #777;
+    height: 10px;
+}
+
+#todoList li.addItem {
+    display: none;
+    position: absolute;
+    top: 0;
+    background: none;
+}
+
+#todoList ul:hover li.addItem {
+    display: block;
+    
+}
+
+#todoList li.addItem input {
+    width: 100%;
+    padding: 4px;
+    border-radius: 11px;
+    /*font-weight: bolder;*/
+}
+
+#todoList li.addItem:active {
+    transform: none;   
+    
+}
+
+#trash {
+  /*  background: rgb(22, 140, 236);*/
+    color: rgb(0, 0, 0);
+    
+    height: 120px;
+    width: 120px;
+    
+    margin: 3px 40px;
+    
+    border-radius:  20% ;
+   
+    
+    
+   
+    /*line-height: 50px;
+    text-align: center;*/
+   
+   
+    /*border-radius: 15px;*/
+    padding : 8px;
+    /*box-shadow: inset grey 5px 5px 5px ;
+    box-sizing: content-box;*/
+
+    
+    
+}
+
+#trash p{
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: cursive;
+    text-align: center;
+    text-decoration: underline;
+    background: greenyellow;
+}
+
+
